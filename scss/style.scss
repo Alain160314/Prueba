@@ -1,0 +1,29 @@
+/*!
+    *Developer:     Jorge Luis Lizano
+    *Email:         sunakes17@gmail.com
+    *Location:      Guayaquil, Ecuador.
+*/
+
+//Colors
+    $color1:    #26327a;
+
+//Fonts
+
+// Mixin media query
+    @mixin hasta($size){
+        @media screen and (max-width: $size){
+            @content;
+        }
+    }
+
+// Breakpoints
+
+    $small:     480px;
+    $medium:    767px;
+    $x-medium:  996px;
+    $large:     1200px;
+    $x-large:   1490px;
+
+//Imports
+    @import "components/normalize";
+    @import "components/general";

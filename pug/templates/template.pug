@@ -1,0 +1,19 @@
+block config
+    include ../config/variables
+<!DOCTYPE html>
+html(lang="es")
+head
+    title=title + ' | '+ site
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content=description)
+    link(rel="shortcut icon", type="image/x-icon", href="img/favicon.ico")
+    link(rel="stylesheet", href="css/style.css")
+body
+    header
+        nav
+            include ../blocks/menu
+    block main
+    include ../blocks/footer
+    
