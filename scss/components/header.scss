@@ -1,0 +1,50 @@
+/* 
+    -Menu 
+*/
+.main-menu,
+.aside-menu{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    
+    &__item{
+        text-align: center;
+        line-height: 2em;
+        border-bottom: 1px $color1 solid;
+        
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    
+    &__link{
+        text-decoration: none;
+        font-size: 1em;
+        display: block;
+        
+        &:hover{
+            text-decoration: line-through;
+        }
+    }
+}
+
+@include desde ($medium){
+    
+    .main-menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        height: 2.5em;
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+        background: #FFF;
+        border-bottom: 2px $color1 solid;
+        
+        &__item{
+            border-bottom: none;
+        }
+    }
+}

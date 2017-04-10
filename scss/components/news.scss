@@ -1,0 +1,36 @@
+/*
+    -News
+*/
+.news{
+    max-width: 1200px;
+}
+.figure img{
+    max-width: 100%;
+}
+
+@include desde ($medium){
+    
+    .section{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .aside{
+        width: 20%;
+        max-width: 12em;
+        margin-right: 2em;
+    }
+    
+    .news{
+        display: flex;
+        flex-wrap: wrap;
+        
+        & header{
+            width: 100%;
+        }
+    }
+    .figure{
+        width: 50%;
+    }
+    
+}

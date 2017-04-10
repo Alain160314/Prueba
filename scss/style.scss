@@ -5,13 +5,16 @@
 */
 
 //Colors
-    $color1:    #26327a;
+    $color1:    #9b59b6;
+    $fontColor: #34495e;
 
 //Fonts
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+    $fontTitle: 'Ubuntu Condensed', sans-serif;
 
 // Mixin media query
-    @mixin hasta($size){
-        @media screen and (max-width: $size){
+    @mixin desde($size){
+        @media screen and (min-width: $size){
             @content;
         }
     }
@@ -27,3 +30,7 @@
 //Imports
     @import "components/normalize";
     @import "components/general";
+    @import "components/header";
+    @import "components/hero";
+    @import "components/news";
+    @import "components/footer";

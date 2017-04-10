@@ -1,0 +1,17 @@
+/*
+    -Footer
+*/
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: $color1;
+    color: #FFF;
+    text-align: center;
+    height: 5em;
+    
+    & h3{
+        font-weight: normal;
+    }
+}
